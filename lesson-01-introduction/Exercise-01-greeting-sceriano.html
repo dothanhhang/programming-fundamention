@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greeting</title>
+</head>
+<body>
+
+<script>
+   setTimeout(greeting(),2000)
+   setTimeout(introduction(),7000)
+
+   function greeting() {
+       document.write('Hello World !<br/>')
+       console.log ('Hello Worlld!')
+   }
+
+   function introduction() {
+       let name = askForAName()
+       document.write('My name is '+ name)
+   }
+
+   function askForAName() {
+       let name = prompt('Who are you?')
+       return name
+   }
+</script>
+
+</body>
+</html>
